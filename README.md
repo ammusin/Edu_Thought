@@ -8,8 +8,7 @@ EduThought is an AI-powered web app that lets users understand any topic through
 
 ## 🚀 Live Demo
 
-🌐 [Click here to try the app (Vercel link)](https://your-vercel-url.vercel.app)  
-*(Replace with your deployed Vercel link)*
+🌐 [Click here to try the app (Vercel link)](hhttps://edu-thought-pcj8-git-master-sinchanas-projects-f3f97972.vercel.app)  
 
 ---
 
