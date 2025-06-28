@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 EduThought AI
 
-## Getting Started
+EduThought is an AI-powered web app that lets users understand any topic through the eyes of unique personas — like a Monk, a Farmer, a Child, or a Teacher.
 
-First, run the development server:
+> 🧠 Learn like never before — AI explains based on worldview and tone.
+
+---
+
+## 🚀 Live Demo
+
+🌐 [Click here to try the app (Vercel link)](https://your-vercel-url.vercel.app)  
+*(Replace with your deployed Vercel link)*
+
+---
+
+## ✨ Features
+
+- 🧑‍🏫 Choose a **persona** (Monk, Scientist, Farmer, etc.)
+- 💬 Type any **topic** (e.g., Photosynthesis, AI, Democracy)
+- 🧠 AI responds with that persona’s tone, style, and perspective
+- 💡 Powered by **Groq’s LLaMA 3** model — lightning-fast & free
+- 🎨 Clean, responsive UI with TailwindCSS
+- 🌐 Full-stack app with Next.js (frontend + backend in one)
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Tech Used              |
+|-------------|------------------------|
+| Frontend    | React (Next.js 15 App Router) |
+| Styling     | Tailwind CSS           |
+| Backend API | Next.js API Route      |
+| AI Model    | Groq API (LLaMA 3)     |
+| Hosting     | Vercel (Frontend + API) |
+
+---
+
+## 🧪 How It Works
+
+1. User enters a **topic** and selects a **persona**
+2. Frontend sends data to `/api/generate`
+3. API calls Groq with a custom prompt
+4. Response is returned and shown on the page
+
+---
+
+## 🗂️ Folder Structure
+
+```
+worldview-simulator/
+├── src/
+│   └── app/
+│       ├── page.js                  # Frontend UI
+│       └── api/generate/route.js   # Backend API route
+├── .env.local                       # Contains GROQ_API_KEY
+├── package.json
+├── README.md
+└── ...
+```
+
+---
+
+## Setup Instructions
+
+```bash
+git clone https://github.com/ammusin/Edu_Thought.git
+cd Edu_Thought
+npm install
+```
+
+Create a `.env.local` file:
+
+```env
+GROQ_API_KEY=your_actual_key_here
+```
+
+Then run the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛡️ Security Note
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The Groq API key is stored in `.env.local` and **never committed to GitHub**.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏁 Submission Ready!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Full-stack (frontend + backend)
+- ✅ Responsive & clean
+- ✅ Persona-prompting AI
+- ✅ No API key exposed
+- ✅ GitHub-ready
