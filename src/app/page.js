@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import React, { useState } from 'react';
@@ -42,7 +43,6 @@ export default function Page() {
       </p>
 
       <div className="w-full max-w-xl flex flex-col gap-4">
-        {/* Input field */}
         <input
           type="text"
           value={topic}
@@ -51,7 +51,6 @@ export default function Page() {
           className="p-3 border border-gray-300 rounded-xl text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
-        {/* Persona selector */}
         <select
           value={persona}
           onChange={(e) => setPersona(e.target.value)}
@@ -62,7 +61,6 @@ export default function Page() {
           ))}
         </select>
 
-        {/* Submit button */}
         <button
           onClick={handleSubmit}
           className="bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition font-semibold"
@@ -71,7 +69,6 @@ export default function Page() {
           {loading ? 'Simulating...' : 'Simulate Worldview'}
         </button>
 
-        {/* AI Response Output */}
         {response && (
           <div className="bg-white shadow-md p-4 rounded-xl border border-gray-200 mt-4 max-h-[350px] overflow-y-auto w-full">
             <h2 className="text-xl font-semibold text-blue-800 mb-2">🧠 AI's Perspective:</h2>
