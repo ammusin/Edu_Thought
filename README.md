@@ -6,12 +6,6 @@ EduThought is an AI-powered web app that lets users understand any topic through
 
 ---
 
-## 🚀 Live Demo
-
-🌐 [Click here to try the app (Vercel link)](hhttps://edu-thought-pcj8-git-master-sinchanas-projects-f3f97972.vercel.app)  
-
----
-
 ## ✨ Features
 
 - 🧑‍🏫 Choose a **persona** (Monk, Scientist, Farmer, etc.)
